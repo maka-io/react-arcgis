@@ -230,7 +230,7 @@ export default class BermudaTriangle extends React.Component {
 
             this.setState({ graphic });
             this.props.view.graphics.add(graphic);
-        });
+        })).catch((e) => console.log(e));
     }
 
     componentWillUnmount() {
